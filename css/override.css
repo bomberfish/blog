@@ -81,10 +81,10 @@
         --mantle: var(--ctp-mocha-mantle);
 
 
-        --primary-color: var(--ctp-mocha-mauve);
-        --text-color: var(--ctp-mocha-text);
+        --primary-color: #eba6ff;
+        --text-color: #f9f9f9;
         --secondary-text-color: var(--ctp-mocha-subtext0);
-        --background-color: var(--ctp-mocha-base);
+        --background-color: #000;
         --link-color: var(--primary-color);
         --link-hover-color: #b892e6;
         --visited-link-color: #b892e6;
