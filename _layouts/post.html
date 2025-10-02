@@ -34,7 +34,9 @@ layout: default
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
+    {% unless page.tags contains 'prerendered' %}
     {% include navlinks.html %}
+    {% endunless %}
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
