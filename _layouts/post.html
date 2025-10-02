@@ -1,11 +1,9 @@
 ---
 layout: default
 ---
-{% unless page.tags contains 'prerendered' %}
+{% if page.tags contains 'prerendered' %}
 <link href="/css/override.css" rel="stylesheet" type="text/css">
-{% endunless %}
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-  {% unless page.tags contains 'prerendered' %}
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
@@ -30,14 +28,14 @@ layout: default
   <div class="share-links">
     {% include sharelinks.html %}
   </div>
-  {% endunless %}
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
-    {% unless page.tags contains 'prerendered' %}
     {% include navlinks.html %}
-    {% endunless %}
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+{% else %}
+{{ content }}
+{% endif %}
