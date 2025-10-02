@@ -12,7 +12,9 @@
   {% seo %}
   <!-- End SEO -->
 
+  {% unless page.tags contains 'prerendered' %}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  {% endunless %}
 
   {% feed_meta %}
 
@@ -31,8 +33,10 @@
   <link rel="stylesheet" href="https://bomberfish.ca/typography.css">
   <!-- <link rel="preload" as="style" type="text/css" href="https://bomberfish.ca/typography.css"> -->
 
+  {% unless page.tags contains 'prerendered' %}
   <link rel="stylesheet" type="text/css" href="/css/catppuccin.css">
   <link rel="preload" as="style" type="text/css" href="/css/catppuccin.css">
+  {% endunless %}
 
   <link rel="stylesheet" type="text/css" href="/css/override.css">
   <link rel="preload" as="style" type="text/css" href="/css/override.css">
