@@ -147,7 +147,7 @@ blockquote {
 
 .post-content h2 {
     font-size: 42px;
-    font-family: var(--font-serif);
+    font-family: var(--font-display);
     font-weight: bold;
         border-bottom: 1px solid var(--surface1);
 }
@@ -223,7 +223,7 @@ body {
 h1,
 h2:not(article h2),
 .site-title {
-    font-family: var(--font-serif), serif;
+    font-family: var(--font-display), serif;
     font-weight: bold;
 }
 
